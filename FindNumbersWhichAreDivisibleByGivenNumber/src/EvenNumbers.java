@@ -12,18 +12,20 @@ public class EvenNumbers {
 		 * Example divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
 		 */
 
-		ArrayList<Integer> TempArray = new ArrayList<>();
+		List<Integer> tempArray = new ArrayList<>();
 
 		for (int i = 0; i < numbers.length; i++) {
 			if (numbers[i] % divider == 0) {
-				TempArray.add(numbers[i]);
+				tempArray.add(numbers[i]);
 			}
 		}
 
-		int[] result = new int[TempArray.size()];
+		int[] result = tempArray.toArray();
 
-		for (int i = 0; i < result.length; i++)
-			result[i] = TempArray.get(i);
+//		for (int i = 0; i < result.length; i++)
+//			result[i] = TempArray.get(i);
+		
+		
 
 		return result;
 
